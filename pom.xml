@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>burstcoin</groupId>
+  <artifactId>burstcoin-database-manager</artifactId>
+  <version>0.0.1</version>
+  <name>Burstcoin Database Manager</name>
+  <url>https://github.com/PoC-Consortium/burstcoin-db-manager</url>
+
+  <scm>
+    <connection>scm:git:git@github.com:PoC-Consortium/burstcoin-db-manager.git</connection>
+    <developerConnection>scm:git:git@github.com:PoC-Consortium/burstcoin-db-manager.git</developerConnection>
+    <url>https://github.com/PoC-Consortium/burstcoin-db-manager</url>
+  </scm>
+
+  <packaging>jar</packaging>
+
+  <properties>
+    <java.version>1.8</java.version>
+    <jacoco.version>0.7.9</jacoco.version>
+
+    <flyway.version>5.0.7</flyway.version>
+
+    <mariadb.version>2.0.3</mariadb.version>
+    <jaybird.version>3.0.3</jaybird.version>
+    <derby.version>10.14.1.0</derby.version>
+
+    <maven.compiler.source>${java.version}</maven.compiler.source>
+    <maven.compiler.target>${java.version}</maven.compiler.target>
+
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+    <!-- For Java -->
+    <sonar.junit.reportPath>${project.build.directory}/reports/java/surefire-reports</sonar.junit.reportPath>
+    <sonar.jacoco.reportsPath>${project.build.directory}/reports/java/jacoco.exec</sonar.jacoco.reportsPath>
+    <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
+    <sonar.language>java</sonar.language>
+  </properties>
+
+  <dependencies>
+    <!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-core -->
+    <dependency>
+      <groupId>org.flywaydb</groupId>
+      <artifactId>flyway-core</artifactId>
+      <version>${flyway.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.mariadb.jdbc</groupId>
+      <artifactId>mariadb-java-client</artifactId>
+      <version>${mariadb.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.firebirdsql.jdbc</groupId>
+      <artifactId>jaybird-jdk18</artifactId>
+      <version>${jaybird.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.derby</groupId>
+      <artifactId>derby</artifactId>
+      <version>${derby.version}</version>
+    </dependency>
+
+
+  </dependencies>
+</project>

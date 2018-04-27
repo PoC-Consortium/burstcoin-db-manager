@@ -2,7 +2,8 @@ package brs.dbmanager.model;
 
 public enum DatabaseType {
 
-  MARIADB("mariadb"), MYSQL("mysql", "mariadb"), DERBY("derby"), FIREBIRD("firebirdsql", "firebird");
+  MARIADB("mariadb"), MYSQL("mysql", "mariadb"), DERBY("derby"), FIREBIRD("firebirdsql", "firebird"),
+  POSTGRESQL("postgresql");
 
   private final String name;
   private final String directory;

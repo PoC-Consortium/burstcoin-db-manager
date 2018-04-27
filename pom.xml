@@ -27,6 +27,7 @@
     <mariadb.version>2.0.3</mariadb.version>
     <jaybird.version>3.0.3</jaybird.version>
     <derby.version>10.14.1.0</derby.version>
+    <postgresql.version>42.2.2</postgresql.version>
 
     <maven.compiler.source>${java.version}</maven.compiler.source>
     <maven.compiler.target>${java.version}</maven.compiler.target>
@@ -66,6 +67,11 @@
       <version>${derby.version}</version>
     </dependency>
 
+    <dependency>
+      <groupId>org.postgresql</groupId>
+      <artifactId>postgresql</artifactId>
+      <version>${postgresql.version}</version>
+    </dependency>
 
   </dependencies>
 </project>

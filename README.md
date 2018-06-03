@@ -1,6 +1,6 @@
 # Burstcoin Database Manager
 
-# This is a development project, please note to use Mariadb or H2 when connecting to the main net. If you want to add to the project and work on adding more database support please do so knowing this is purely developmental stages.
+# This is a development project, please note to use Mariadb or H2 when connecting to the main net. If you want to add to the project and work on adding more database support please do so knowing this is purely developmental stages. Please follow the contributing instructions.
 
 ## Goal
 The goal of the Burstcoin Database Manager is twofold:
